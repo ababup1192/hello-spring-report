@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.008s</div>
+<div class="counter">0.002s</div>
 <p>duration</p>
 </div>
 </td>
@@ -195,14 +195,11 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
 	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
 	... 72 more
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
 	... 96 more
 </pre>
@@ -331,14 +328,11 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
 	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38)
 	... 72 more
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300)
 	... 96 more
 </pre>
@@ -357,7 +351,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 </thead>
 <tr>
 <td class="failures">joinQueryTest</td>
-<td>0.008s</td>
+<td>0.002s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
@@ -370,42 +364,42 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>09:51:03.151 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.220 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-09:51:03.275 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-09:51:03.319 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.ababup1192.EquipmentRoomMigrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-09:51:03.344 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.ababup1192.EquipmentRoomMigrationTest], using SpringBootContextLoader
-09:51:03.352 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.ababup1192.EquipmentRoomMigrationTest]: class path resource [org/ababup1192/EquipmentRoomMigrationTest-context.xml] does not exist
-09:51:03.353 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.ababup1192.EquipmentRoomMigrationTest]: class path resource [org/ababup1192/EquipmentRoomMigrationTestContext.groovy] does not exist
-09:51:03.354 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.ababup1192.EquipmentRoomMigrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-09:51:03.358 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ababup1192.EquipmentRoomMigrationTest]: EquipmentRoomMigrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-09:51:03.434 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.564 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-09:51:03.565 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-09:51:03.565 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-09:51:03.595 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [org/ababup1192/] to resources [URL [file:/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/], URL [file:/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/]]
-09:51:03.595 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192]
-09:51:03.596 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192] for files matching pattern [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/*.class]
-09:51:03.605 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192]
-09:51:03.606 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192] for files matching pattern [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/*.class]
-09:51:03.622 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:org/ababup1192/*.class] to resources [file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/BookCategoryMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/EquipmentRoomMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/MemberMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/SalesSlipMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/Application.class]]
-09:51:03.768 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/Application.class]
-09:51:03.771 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ababup1192.Application for test class org.ababup1192.EquipmentRoomMigrationTest
-09:51:03.790 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [org.ababup1192.EquipmentRoomMigrationTest]: using defaults.
-09:51:03.802 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-09:51:03.879 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@191f81ab, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@598e92fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c1524a9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e5f7836, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7b28a08f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@569cec5b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1369ba4d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7692fede, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4800145b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@794fd734, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@272aa182, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@462fcfb7]
-09:51:03.887 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.890 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.893 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.894 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.903 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@61fedfda testClass = EquipmentRoomMigrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7c62c8b testClass = EquipmentRoomMigrationTest, locations = '{}', classes = '{class org.ababup1192.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@66942a62, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@63f4d6a0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1491c6ee], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
-09:51:03.904 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.905 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.ababup1192.EquipmentRoomMigrationTest]
-09:51:03.973 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
-09:51:03.974 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
-09:51:03.978 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
-09:51:03.982 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
-09:51:03.987 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+<pre>23:34:34.510 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.516 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+23:34:34.541 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+23:34:34.566 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [org.ababup1192.EquipmentRoomMigrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+23:34:34.582 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.ababup1192.EquipmentRoomMigrationTest], using SpringBootContextLoader
+23:34:34.585 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.ababup1192.EquipmentRoomMigrationTest]: class path resource [org/ababup1192/EquipmentRoomMigrationTest-context.xml] does not exist
+23:34:34.586 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [org.ababup1192.EquipmentRoomMigrationTest]: class path resource [org/ababup1192/EquipmentRoomMigrationTestContext.groovy] does not exist
+23:34:34.587 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [org.ababup1192.EquipmentRoomMigrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+23:34:34.589 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.ababup1192.EquipmentRoomMigrationTest]: EquipmentRoomMigrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:34:34.666 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.739 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+23:34:34.740 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:34:34.740 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:34:34.751 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [org/ababup1192/] to resources [URL [file:/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/], URL [file:/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/]]
+23:34:34.751 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192]
+23:34:34.751 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192] for files matching pattern [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/*.class]
+23:34:34.757 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192]
+23:34:34.758 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192] for files matching pattern [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/*.class]
+23:34:34.764 [Test worker] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:org/ababup1192/*.class] to resources [file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/BookCategoryMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/EquipmentRoomMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/MemberMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/test/org/ababup1192/SalesSlipMigrationTest.class], file [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/Application.class]]
+23:34:34.835 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/tmp/build/0b85b14b/gradle-project/build/classes/main/org/ababup1192/Application.class]
+23:34:34.837 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.ababup1192.Application for test class org.ababup1192.EquipmentRoomMigrationTest
+23:34:34.843 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [org.ababup1192.EquipmentRoomMigrationTest]: using defaults.
+23:34:34.850 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:34:34.885 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3afa4437, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4b6229b2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@33796349, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3be08964, org.springframework.test.context.transaction.TransactionalTestExecutionListener@53d3b9d3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@92625a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@713d7ce4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4e29600e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@fa5539, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@38497bb1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2289fa00, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@27a5c74f]
+23:34:34.889 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.890 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.891 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.892 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.897 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@5af856b7 testClass = EquipmentRoomMigrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@36f74690 testClass = EquipmentRoomMigrationTest, locations = '{}', classes = '{class org.ababup1192.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@fb57b0d, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6fabd2ff, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6e269853], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+23:34:34.898 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.898 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [org.ababup1192.EquipmentRoomMigrationTest]
+23:34:34.938 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+23:34:34.938 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+23:34:34.939 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+23:34:34.941 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+23:34:34.941 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -415,20 +409,20 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.4.2.RELEASE)
 
-2017-02-20 09:51:04.938  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : Starting EquipmentRoomMigrationTest on aef5f325-8d83-4105-7042-5f3ba3cb3b99 with PID 73 (started by root in /tmp/build/0b85b14b/gradle-project)
-2017-02-20 09:51:04.942  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : No active profile set, falling back to default profiles: default
-2017-02-20 09:51:05.031  INFO 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@724541ec: startup date [Mon Feb 20 09:51:05 UTC 2017]; root of context hierarchy
-2017-02-20 09:51:09.566  INFO 73 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-02-20 09:51:09.870  INFO 73 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37aef73c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-02-20 09:51:10.995  INFO 73 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-02-20 09:51:11.020  INFO 73 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2017-02-20 23:34:35.492  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : Starting EquipmentRoomMigrationTest on 515de287-e49b-4ea1-53e0-474db3899523 with PID 73 (started by root in /tmp/build/0b85b14b/gradle-project)
+2017-02-20 23:34:35.493  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : No active profile set, falling back to default profiles: default
+2017-02-20 23:34:35.628  INFO 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@17fae80d: startup date [Mon Feb 20 23:34:35 UTC 2017]; root of context hierarchy
+2017-02-20 23:34:38.133  INFO 73 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-02-20 23:34:38.270  INFO 73 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90d92689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-20 23:34:38.954  INFO 73 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-20 23:34:38.969  INFO 73 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2017-02-20 09:51:11.202  INFO 73 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
-2017-02-20 09:51:11.207  INFO 73 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2017-02-20 09:51:11.211  INFO 73 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2017-02-20 09:51:11.322  INFO 73 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2017-02-20 09:51:12.271 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 23:34:39.082  INFO 73 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2017-02-20 23:34:39.084  INFO 73 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-02-20 23:34:39.089  INFO 73 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-02-20 23:34:39.155  INFO 73 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-02-20 23:34:39.446 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -543,24 +537,24 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db: Name or service not known
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_121]
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 103 common frames omitted
 
-2017-02-20 09:51:12.319  WARN 73 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+2017-02-20 23:34:39.498  WARN 73 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2017-02-20 09:51:12.384  INFO 73 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2017-02-20 09:51:12.421  INFO 73 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2017-02-20 09:51:13.755  INFO 73 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2017-02-20 09:51:13.781 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 23:34:39.510  INFO 73 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-02-20 23:34:39.536  INFO 73 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-02-20 23:34:40.535  INFO 73 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-02-20 23:34:40.566 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -668,22 +662,19 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:51:13.801  WARN 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
-2017-02-20 09:51:13.815  INFO 73 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
+2017-02-20 23:34:40.573  WARN 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-02-20 23:34:40.594  INFO 73 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
 
 Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-02-20 09:51:13.825 ERROR 73 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
+2017-02-20 23:34:40.603 ERROR 73 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583) ~[spring-beans-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -801,18 +792,15 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	... 72 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:51:13.832 ERROR 73 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@191f81ab] to prepare test instance [org.ababup1192.EquipmentRoomMigrationTest@7413a493]
+2017-02-20 23:34:40.606 ERROR 73 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3afa4437] to prepare test instance [org.ababup1192.EquipmentRoomMigrationTest@38260c39]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -933,14 +921,11 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	... 72 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
@@ -953,16 +938,16 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.4.2.RELEASE)
 
-2017-02-20 09:51:14.001  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : Starting EquipmentRoomMigrationTest on aef5f325-8d83-4105-7042-5f3ba3cb3b99 with PID 73 (started by root in /tmp/build/0b85b14b/gradle-project)
-2017-02-20 09:51:14.001  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : No active profile set, falling back to default profiles: default
-2017-02-20 09:51:14.003  INFO 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@270cb42b: startup date [Mon Feb 20 09:51:14 UTC 2017]; root of context hierarchy
-2017-02-20 09:51:15.199  INFO 73 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-02-20 09:51:15.375  INFO 73 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37aef73c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-02-20 09:51:16.146  INFO 73 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-02-20 09:51:16.148  INFO 73 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2017-02-20 23:34:40.768  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : Starting EquipmentRoomMigrationTest on 515de287-e49b-4ea1-53e0-474db3899523 with PID 73 (started by root in /tmp/build/0b85b14b/gradle-project)
+2017-02-20 23:34:40.768  INFO 73 --- [    Test worker] o.ababup1192.EquipmentRoomMigrationTest  : No active profile set, falling back to default profiles: default
+2017-02-20 23:34:40.803  INFO 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3eba0a33: startup date [Mon Feb 20 23:34:40 UTC 2017]; root of context hierarchy
+2017-02-20 23:34:42.246  INFO 73 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-02-20 23:34:42.352  INFO 73 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90d92689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-20 23:34:43.435  INFO 73 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-20 23:34:43.437  INFO 73 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2017-02-20 09:51:16.203 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 23:34:43.536 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -1077,24 +1062,21 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 103 common frames omitted
 
-2017-02-20 09:51:16.223  WARN 73 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+2017-02-20 23:34:43.657  WARN 73 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2017-02-20 09:51:16.226  INFO 73 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2017-02-20 09:51:16.227  INFO 73 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2017-02-20 09:51:16.532  INFO 73 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2017-02-20 09:51:16.538 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 23:34:43.660  INFO 73 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-02-20 23:34:43.661  INFO 73 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-02-20 23:34:43.998  INFO 73 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-02-20 23:34:44.012 ERROR 73 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -1202,22 +1184,19 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:51:16.553  WARN 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
-2017-02-20 09:51:16.585  INFO 73 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
+2017-02-20 23:34:44.069  WARN 73 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-02-20 23:34:44.074  INFO 73 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
 
 Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-02-20 09:51:16.590 ERROR 73 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
+2017-02-20 23:34:44.105 ERROR 73 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583) ~[spring-beans-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -1335,18 +1314,15 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	... 72 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:51:16.643 ERROR 73 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@191f81ab] to prepare test instance [org.ababup1192.EquipmentRoomMigrationTest@7abc4e4d]
+2017-02-20 23:34:44.125 ERROR 73 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3afa4437] to prepare test instance [org.ababup1192.EquipmentRoomMigrationTest@4bb6b959]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -1467,14 +1443,11 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	at org.hibernate.tool.schema.internal.TargetDatabaseImpl.prepare(TargetDatabaseImpl.java:38) ~[hibernate-core-5.0.11.Final.jar:5.0.11.Final]
 	... 72 common frames omitted
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_121]
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_121]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_121]
-	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_121]
-	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.40.jar:5.1.40]
+Caused by: java.net.UnknownHostException: worker-db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
@@ -1489,7 +1462,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.3</a> at Feb 20, 2017 9:51:22 AM</p>
+<a href="http://www.gradle.org">Gradle 3.3</a> at Feb 20, 2017 11:34:54 PM</p>
 </div>
 </div>
 </body>
