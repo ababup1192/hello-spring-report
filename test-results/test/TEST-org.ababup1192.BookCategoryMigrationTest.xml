@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.ababup1192.BookCategoryMigrationTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2017-02-20T09:13:58" hostname="7e1fb851-c357-4855-5893-bb91216d6a5b" time="1.201">
+<testsuite name="org.ababup1192.BookCategoryMigrationTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2017-02-20T09:29:10" hostname="ba54367f-912c-42c4-4c1a-1485650b5fcd" time="2.419">
   <properties/>
   <testcase name="joinQueryTest" classname="org.ababup1192.BookCategoryMigrationTest" time="0.0">
     <failure message="java.lang.IllegalStateException: Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
@@ -265,12 +265,12 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	... 96 more
 </failure>
   </testcase>
-  <system-out><![CDATA[2017-02-20 09:13:57.160  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.ababup1192.BookCategoryMigrationTest], using SpringBootContextLoader
-2017-02-20 09:13:57.164  INFO 71 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.ababup1192.BookCategoryMigrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2017-02-20 09:13:57.169  INFO 71 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.ababup1192.BookCategoryMigrationTest]: BookCategoryMigrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2017-02-20 09:13:57.171  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.ababup1192.Application for test class org.ababup1192.BookCategoryMigrationTest
-2017-02-20 09:13:57.177  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2017-02-20 09:13:57.179  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7bdabe07, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26684a40, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@462fd7af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@59695c89, org.springframework.test.context.transaction.TransactionalTestExecutionListener@77edeb25, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@13b395d2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b99aaa4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3887264a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@202b56bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2fb94a6e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@491319b7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@48a7c3a9]
+  <system-out><![CDATA[2017-02-20 09:29:08.579  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.ababup1192.BookCategoryMigrationTest], using SpringBootContextLoader
+2017-02-20 09:29:08.581  INFO 71 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.ababup1192.BookCategoryMigrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-20 09:29:08.582  INFO 71 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.ababup1192.BookCategoryMigrationTest]: BookCategoryMigrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-02-20 09:29:08.610  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.ababup1192.Application for test class org.ababup1192.BookCategoryMigrationTest
+2017-02-20 09:29:08.613  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-20 09:29:08.633  INFO 71 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7bdabe07, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@26684a40, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@462fd7af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@59695c89, org.springframework.test.context.transaction.TransactionalTestExecutionListener@77edeb25, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@13b395d2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2b99aaa4, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3887264a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@202b56bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2fb94a6e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@491319b7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@48a7c3a9]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -280,16 +280,16 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.4.2.RELEASE)
 
-2017-02-20 09:13:57.322  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : Starting BookCategoryMigrationTest on 7e1fb851-c357-4855-5893-bb91216d6a5b with PID 71 (started by root in /tmp/build/0b85b14b/gradle-project)
-2017-02-20 09:13:57.322  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : No active profile set, falling back to default profiles: default
-2017-02-20 09:13:57.324  INFO 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7bd98f2: startup date [Mon Feb 20 09:13:57 UTC 2017]; root of context hierarchy
-2017-02-20 09:13:58.191  INFO 71 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-02-20 09:13:58.245  INFO 71 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90d92689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-02-20 09:13:58.500  INFO 71 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-02-20 09:13:58.501  INFO 71 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2017-02-20 09:29:08.802  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : Starting BookCategoryMigrationTest on ba54367f-912c-42c4-4c1a-1485650b5fcd with PID 71 (started by root in /tmp/build/0b85b14b/gradle-project)
+2017-02-20 09:29:08.810  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : No active profile set, falling back to default profiles: default
+2017-02-20 09:29:08.817  INFO 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7bd98f2: startup date [Mon Feb 20 09:29:08 UTC 2017]; root of context hierarchy
+2017-02-20 09:29:09.838  INFO 71 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-02-20 09:29:09.905  INFO 71 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90d92689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-20 09:29:10.168  INFO 71 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-20 09:29:10.169  INFO 71 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2017-02-20 09:13:58.515 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 09:29:10.185 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -415,13 +415,13 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 103 common frames omitted
 
-2017-02-20 09:13:58.518  WARN 71 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+2017-02-20 09:29:10.188  WARN 71 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2017-02-20 09:13:58.519  INFO 71 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2017-02-20 09:13:58.535  INFO 71 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2017-02-20 09:13:58.696  INFO 71 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2017-02-20 09:13:58.719 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 09:29:10.189  INFO 71 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-02-20 09:29:10.192  INFO 71 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-02-20 09:29:10.278  INFO 71 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-02-20 09:29:10.327 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -540,11 +540,11 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:13:58.731  WARN 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
-2017-02-20 09:13:58.740  INFO 71 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
+2017-02-20 09:29:10.342  WARN 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-02-20 09:29:10.348  INFO 71 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
 
 Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-02-20 09:13:58.744 ERROR 71 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
+2017-02-20 09:29:10.353 ERROR 71 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583) ~[spring-beans-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -673,7 +673,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:13:58.771 ERROR 71 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7bdabe07] to prepare test instance [org.ababup1192.BookCategoryMigrationTest@7f4f4ed8]
+2017-02-20 09:29:10.360 ERROR 71 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7bdabe07] to prepare test instance [org.ababup1192.BookCategoryMigrationTest@7f4f4ed8]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -814,16 +814,16 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.4.2.RELEASE)
 
-2017-02-20 09:13:58.884  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : Starting BookCategoryMigrationTest on 7e1fb851-c357-4855-5893-bb91216d6a5b with PID 71 (started by root in /tmp/build/0b85b14b/gradle-project)
-2017-02-20 09:13:58.891  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : No active profile set, falling back to default profiles: default
-2017-02-20 09:13:58.906  INFO 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@18f5f865: startup date [Mon Feb 20 09:13:58 UTC 2017]; root of context hierarchy
-2017-02-20 09:13:59.519  INFO 71 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-02-20 09:13:59.561  INFO 71 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90d92689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-02-20 09:13:59.772  INFO 71 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-02-20 09:13:59.772  INFO 71 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2017-02-20 09:29:10.489  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : Starting BookCategoryMigrationTest on ba54367f-912c-42c4-4c1a-1485650b5fcd with PID 71 (started by root in /tmp/build/0b85b14b/gradle-project)
+2017-02-20 09:29:10.493  INFO 71 --- [    Test worker] o.ababup1192.BookCategoryMigrationTest   : No active profile set, falling back to default profiles: default
+2017-02-20 09:29:10.509  INFO 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@18f5f865: startup date [Mon Feb 20 09:29:10 UTC 2017]; root of context hierarchy
+2017-02-20 09:29:12.087  INFO 71 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-02-20 09:29:12.145  INFO 71 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90d92689] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-20 09:29:12.436  INFO 71 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-20 09:29:12.437  INFO 71 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2017-02-20 09:13:59.786 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 09:29:12.453 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -949,13 +949,13 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 103 common frames omitted
 
-2017-02-20 09:13:59.791  WARN 71 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+2017-02-20 09:29:12.460  WARN 71 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2017-02-20 09:13:59.793  INFO 71 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2017-02-20 09:13:59.795  INFO 71 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2017-02-20 09:13:59.921  INFO 71 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2017-02-20 09:13:59.932 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-20 09:29:12.461  INFO 71 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-02-20 09:29:12.463  INFO 71 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-02-20 09:29:12.735  INFO 71 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-02-20 09:29:12.746 ERROR 71 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -1074,11 +1074,11 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:13:59.940  WARN 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
-2017-02-20 09:13:59.949  INFO 71 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
+2017-02-20 09:29:12.757  WARN 71 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-02-20 09:29:12.763  INFO 71 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
 
 Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-02-20 09:13:59.959 ERROR 71 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
+2017-02-20 09:29:12.772 ERROR 71 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583) ~[spring-beans-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -1207,7 +1207,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 96 common frames omitted
 
-2017-02-20 09:13:59.968 ERROR 71 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7bdabe07] to prepare test instance [org.ababup1192.BookCategoryMigrationTest@313cdc6e]
+2017-02-20 09:29:12.778 ERROR 71 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7bdabe07] to prepare test instance [org.ababup1192.BookCategoryMigrationTest@313cdc6e]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
