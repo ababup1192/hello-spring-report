@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.007s</div>
+<div class="counter">0.011s</div>
 <p>duration</p>
 </div>
 </td>
@@ -220,7 +220,7 @@ Caused by: java.net.UnknownHostException: db
 </thead>
 <tr>
 <td class="failures">migrateTest</td>
-<td>0.007s</td>
+<td>0.011s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -228,12 +228,12 @@ Caused by: java.net.UnknownHostException: db
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2017-02-24 07:13:51.351  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.ababup1192.SalesSlipMigrationTest], using SpringBootContextLoader
-2017-02-24 07:13:51.352  INFO 76 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.ababup1192.SalesSlipMigrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2017-02-24 07:13:51.361  INFO 76 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.ababup1192.SalesSlipMigrationTest]: SalesSlipMigrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2017-02-24 07:13:51.396  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.ababup1192.Application for test class org.ababup1192.SalesSlipMigrationTest
-2017-02-24 07:13:51.399  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2017-02-24 07:13:51.415  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6d4934be, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6d42e365, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@26877e4f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27ca07a6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3823b25, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@79a1a9fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@64c9d586, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@13c9198e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@18043c1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@751acc7b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5f5552bb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@48b25b6]
+<pre>2017-02-24 07:20:33.993  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.ababup1192.SalesSlipMigrationTest], using SpringBootContextLoader
+2017-02-24 07:20:33.994  INFO 76 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.ababup1192.SalesSlipMigrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-02-24 07:20:33.995  INFO 76 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [org.ababup1192.SalesSlipMigrationTest]: SalesSlipMigrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2017-02-24 07:20:33.997  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration org.ababup1192.Application for test class org.ababup1192.SalesSlipMigrationTest
+2017-02-24 07:20:33.999  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-02-24 07:20:34.002  INFO 76 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3925b492, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b9e93fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@42492c35, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2f204a3b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3b35ea69, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@24abb7bf, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2f081f9b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@254e9d3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@16263d52, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f497666, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5258d3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@256d337b]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -243,16 +243,16 @@ Caused by: java.net.UnknownHostException: db
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.4.2.RELEASE)
 
-2017-02-24 07:13:51.587  INFO 76 --- [    Test worker] org.ababup1192.SalesSlipMigrationTest    : Starting SalesSlipMigrationTest on 54ba7d4e-a9f1-4dea-4b9e-df39a6b37838 with PID 76 (started by root in /tmp/build/0b85b14b/gradle-project)
-2017-02-24 07:13:51.588  INFO 76 --- [    Test worker] org.ababup1192.SalesSlipMigrationTest    : No active profile set, falling back to default profiles: default
-2017-02-24 07:13:51.635  INFO 76 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7cb6427e: startup date [Fri Feb 24 07:13:51 UTC 2017]; root of context hierarchy
-2017-02-24 07:13:53.641  INFO 76 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2017-02-24 07:13:53.717  INFO 76 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f02f6f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2017-02-24 07:13:54.240  INFO 76 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2017-02-24 07:13:54.240  INFO 76 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2017-02-24 07:20:34.042  INFO 76 --- [    Test worker] org.ababup1192.SalesSlipMigrationTest    : Starting SalesSlipMigrationTest on cdc901f4-7c40-4b75-5661-00afe10bbc0a with PID 76 (started by root in /tmp/build/0b85b14b/gradle-project)
+2017-02-24 07:20:34.043  INFO 76 --- [    Test worker] org.ababup1192.SalesSlipMigrationTest    : No active profile set, falling back to default profiles: default
+2017-02-24 07:20:34.048  INFO 76 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5b1b8794: startup date [Fri Feb 24 07:20:34 UTC 2017]; root of context hierarchy
+2017-02-24 07:20:34.443  INFO 76 --- [    Test worker] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-02-24 07:20:34.477  INFO 76 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8600421a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-02-24 07:20:34.609  INFO 76 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-02-24 07:20:34.609  INFO 76 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2017-02-24 07:13:54.277 ERROR 76 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-24 07:20:34.617 ERROR 76 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -369,24 +369,21 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
 	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
-Caused by: java.net.UnknownHostException: db: Name or service not known
-	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:1.8.0_121]
-	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928) ~[na:1.8.0_121]
-	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323) ~[na:1.8.0_121]
-	at java.net.InetAddress.getAllByName0(InetAddress.java:1276) ~[na:1.8.0_121]
+Caused by: java.net.UnknownHostException: db
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280) ~[na:1.8.0_121]
 	at java.net.InetAddress.getAllByName(InetAddress.java:1192) ~[na:1.8.0_121]
 	at java.net.InetAddress.getAllByName(InetAddress.java:1126) ~[na:1.8.0_121]
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 105 common frames omitted
 
-2017-02-24 07:13:54.286  WARN 76 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+2017-02-24 07:20:34.632  WARN 76 --- [    Test worker] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2017-02-24 07:13:54.286  INFO 76 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2017-02-24 07:13:54.299  INFO 76 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
-2017-02-24 07:13:54.604  INFO 76 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2017-02-24 07:13:54.622 ERROR 76 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+2017-02-24 07:20:34.632  INFO 76 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-02-24 07:20:34.633  INFO 76 --- [    Test worker] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2017-02-24 07:20:34.704  INFO 76 --- [    Test worker] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-02-24 07:20:34.708 ERROR 76 --- [    Test worker] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
 
 com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
@@ -504,11 +501,11 @@ Caused by: java.net.UnknownHostException: db
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 98 common frames omitted
 
-2017-02-24 07:13:54.657  WARN 76 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
-2017-02-24 07:13:54.659  INFO 76 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
+2017-02-24 07:20:34.717  WARN 76 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+2017-02-24 07:20:34.720  INFO 76 --- [    Test worker] utoConfigurationReportLoggingInitializer : 
 
 Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
-2017-02-24 07:13:54.677 ERROR 76 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
+2017-02-24 07:20:34.725 ERROR 76 --- [    Test worker] o.s.boot.SpringApplication               : Application startup failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1583) ~[spring-beans-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -636,7 +633,7 @@ Caused by: java.net.UnknownHostException: db
 	at com.mysql.jdbc.MysqlIO.&lt;init&gt;(MysqlIO.java:300) ~[mysql-connector-java-5.1.40.jar:5.1.40]
 	... 98 common frames omitted
 
-2017-02-24 07:13:54.682 ERROR 76 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@6d4934be] to prepare test instance [org.ababup1192.SalesSlipMigrationTest@425d0ecd]
+2017-02-24 07:20:34.734 ERROR 76 --- [    Test worker] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3925b492] to prepare test instance [org.ababup1192.SalesSlipMigrationTest@58e623c5]
 
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
@@ -778,7 +775,7 @@ Caused by: java.net.UnknownHostException: db
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.4</a> at Feb 24, 2017 7:13:56 AM</p>
+<a href="http://www.gradle.org">Gradle 3.4</a> at Feb 24, 2017 7:20:35 AM</p>
 </div>
 </div>
 </body>
